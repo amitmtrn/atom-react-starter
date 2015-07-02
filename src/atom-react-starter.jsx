@@ -4,11 +4,7 @@ module.exports = AtomReactStarter = {
   panelItem: {},
   activate: function() {
       atom.commands.add('atom-workspace', {
-        'atom-react-starter:toggle': (function(_this) {
-          return function() {
-            return _this.toggle();
-          };
-        })(this)
+        'atom-react-starter:toggle': AtomReactStarter.toggle
       });
     },
 
