@@ -7,7 +7,7 @@ module.exports = AtomReactStarter = {
       item: document.createElement("div")
     };
     React.render(
-        React.createElement("div", null, "my src test"),
+        <div>my src test</div>,
         panelItem.item
       );
       atom.workspace.addBottomPanel(panelItem);
